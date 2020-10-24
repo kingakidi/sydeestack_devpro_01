@@ -1,0 +1,138 @@
+.main{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	color: #5e5959d9;
+	flex-grow: 1;
+
+}
+
+/*BEGINNING OF SIDEBAR */
+.sidebar{
+	width: 18vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: #5e5959d9;
+	background-color:  #f5f4f1cf;
+}
+
+.sidebar-link-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	padding-left: 20px;
+	background: #fff;
+
+}
+
+.sidebar-link, .sidebar-link:visited, .sidebar-link:active, .sidebar-link:hover{
+	text-decoration: none;
+	color: #5e5959d9;
+	display: inline-block;
+	padding-bottom: 20px;
+	padding: 5px;
+	padding-left: 15px;
+	border-radius: 8px;
+
+
+}
+
+
+
+
+.motto{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+
+}
+
+
+
+/*END OF SIDEBAR*/
+.container-c{
+	background-color: white;
+	width: 80vw;
+	display: flex;
+	justify-content: space-around;
+	padding: 30px;
+}
+
+.container-action, .container-report{
+	background-color:  #fff;
+	border-radius: 4px;
+	padding: 10px;
+	box-shadow: 5px 5px 20px rgba(0,0,0, .06);
+}
+
+.container-action{
+	flex-grow: 0.85;
+}
+
+
+
+/*MEDIA QUERY*/
+/*@media (max-width: 1200px) {
+ 	
+  	
+  	.container{
+  		flex-direction: column;
+  	}
+
+
+}*/
+
+
+@media (max-width: 900px) {
+ 	
+  	
+  	.container-c{
+  		flex-direction: column;
+  	}
+
+
+}
+
+@media (max-width: 600px) {
+ 	.main{
+ 		flex-direction: column;
+ 		align-self: flex-start;
+ 		justify-content: center;
+ 		align-items: center;
+
+ 	}
+  	.sidebar{
+  		width: 100%;
+		height: 100%;
+		background-color: #f5f4f1cf;
+		align-items: stretch;
+		display: flex;
+		flex: 0;
+		
+  	}
+  	
+  	.sidebar-link-container{
+  		flex-direction: row;
+  		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+  	}
+  	.motto{
+  		display: none;
+  	}
+.container-c {
+    flex-direction: column;
+    width: 100%;
+    flex:1;
+  	}
+}
+
+ul{
+	list-style-type: none;
+}
+ul li{
+	list-style-type: none;
+}

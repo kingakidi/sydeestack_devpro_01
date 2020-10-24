@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="text/css">
+		
+		#btn2{
+			display: none;
+			
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="container" id="container">
+		<div class="jumbotron" id="jumbotron"> 
+			Javascript with styling 
+
+			lorem
+		</div>
+
+		<p id="btn1" class="btn btn-success text-light">Click</p>
+		<!-- <button id="btn1" class="btn btn-success text-light"> Dark Mode </button> -->
+		<button id="btn2" class="btn btn-info"> Light Mode </button>
+	</div>
+
+
+	<script type="text/javascript">
+		document.getElementById('btn1').onclick = function () {
+
+
+			document.getElementById('jumbotron').style.backgroundColor="black"
+			document.getElementById('jumbotron').style.color="white"
+			document.getElementById('btn2').style.display="block"
+			document.getElementById('btn1').style.display="none"
+		}
+
+
+
+		document.getElementById('btn2').onclick = function () {
+
+
+			document.getElementById('jumbotron').style.backgroundColor="white"
+			document.getElementById('jumbotron').style.color="black"
+			document.getElementById('btn2').style.display="none"
+			document.getElementById('btn1').style.display="block"
+			document.getElementById('jumbotron').style.borderStyle="solid"
+			document.getElementById('jumbotron').style.borderColor="yellow"
+			document.getElementById("jumbotron").style.borderSize="3px;"
+
+		}
+
+		
+	</script>
+
+</body>
+</html>
